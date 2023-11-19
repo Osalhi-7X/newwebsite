@@ -1,0 +1,89 @@
+[Plans.maison]
+Plans_de_maison_simple = 200
+Plans_de_maison_standard = 1000
+Plans_de_maison_sur_mesure = 1200
+Plans_de_maison_par_un_architecte = 2500 
+
+[travaux.gros_oeuvre]
+	[travaux.gros_oeuvre.travaux_terrassement]
+	Reperage_et_piquetage_du_terrain = 20
+	[travaux.gros_oeuvre.fondations]
+	Fondations_profondes = 200 # 200 euros / m3
+
+[travaux.materiaux]
+Nivellement_de_terrain = 10 # 10 euros / m2
+Tranchee_epaisse = 10 # 10 euros / ml
+Tranchee_etroite = 3 # 3 euros / ml
+Fouille_en_masse = 10 # 10 euros / m3
+Fouille_manuelle = 43 # 43 euros / m3
+Deblai = 15 # 15 euros / m3
+Remblai_terre = 154
+Remblai_sable = 30 # 30 euros / m3
+Enrochement = 50 # 50 euros / tonne
+Beton = 150 # 150 euros / m3
+coffrage = 50 # 50 euros / m2
+plancger_beton = 90 # 90 euros / m2
+chape_de_ciment = 60 # 60 euros / m2
+construction_mur_parpaing = 20 # 20 euros / m2
+mur_en_agglo_de_ciment_creaux = 40 # 40 euros / m2
+Cloison_en_plaque_de_platre_simple = 35 # 35 euros / m2
+Porte_dentree_en_aluminium = 900 # 2100 euros / 2 portes
+Portes_interieures = 600 # 500 euros / 10 unités
+Fenetre_aluminium = 400 # 500 euros / 10 unités
+Volets_en_bois = 400 # 400 euros / 10 unités
+
+
+[travaux.second_oeuvre]
+Charpente_traditionnelle = 250 # 250 euros / m2
+Couverture_toiture_en_tuiles = 55 # 55 euros / m2
+Isolation_des_murs_par_interieur = 30 #  30 euros / m2
+Isolation_des_combles = 30 # 30 euros / m2 
+Coffret_de_raccordement_exterieur_encastrer = 350
+Coffrets_pre-equipes = 400
+Interrupteur_differentiel = 185
+Coupe_circuit_domestique = 20
+Prise_murale = 30 # 30 / unité (10 pour 100m2)
+Point_lumineux = 40 # 40 euros / unité (10 pour 100m2)
+Branchement_alimentation = 20 # 20 euros / ml (multiplé par surface totale)
+Raccordement_evacuation_en_cuivre = 50 # 50 euros / ml (multiplé par surface totale)
+Robinetterie_pour_machine_a_laver = 30 # 30 euros / unité 
+Robinetterie_salle_de_bain = 300
+Robinetterie_chasse_deau_WC = 50
+Robinetterie_pour_lavabo_et_eviers = 150
+Raccordement_au_compteur_deau = 5 # 5 euros / ml (multiplé par surface totale)
+
+
+[travaux.main_doeuvre]
+Installation_charpente = 120 # 120 euros / m2
+Isolation_des_murs_par_interieur = 60 # euros / m2
+Isolation_des_combles = 45 # 45 euros / m2
+Coffret_de_raccordement_exterieur_encastrer = 300
+Coffrets_pre-equipes = 250
+Coupe_circuit_domestique = 25
+Interrupteur_differentiel = 215
+Prise_murale = 25 # 25 euros (10 pour 100m2)
+Point_lumineux = 30 # 30 euros / unité (10 pour 100m2)
+Branchement_alimentation = 50 # 50 euros / m2 (multiplé par surface totale)
+Raccordement_evacuation_en_cuivre = 70 # 70 euros / m2 (multiplé par surface totale)
+Robinetterie_pour_machine_a_laver = 50 # 30 euros / unité
+Robinetterie_salle_de_bain = 350
+Robinetterie_chasse_deau_WC = 100
+Robinetterie_pour_lavabo_et_eviers = 200
+Raccordement_au_compteur_deau = 20 # 20 euros / ml (multiplé par surface totale)
+Porte_dentree_en_aluminium = 2100 # 2100 euros / 2 portes
+Portes_interieures = 500 # 500 euros / 10 unités
+Fenetre_aluminium = 500 # 500 euros / 10 unités
+Volets_en_bois = 400 # 400 euros / 10 unités
+
+[TVA]
+TVA = 0.2 # 20%
+
+
+
+
+
+
+
+
+
+

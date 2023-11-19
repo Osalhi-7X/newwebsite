@@ -1,0 +1,653 @@
+- department: Ain
+  postal_code: "01"
+  price_per_sqm:
+    - 12
+    - 14
+
+- department: Aisne
+  postal_code: "02"
+  price_per_sqm:
+    - 9
+    - 11
+
+- department: Allier
+  postal_code: "03"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Alpes-de-Haute-Provence
+  postal_code: "04"
+  price_per_sqm:
+    - 11 
+    - 13
+
+- department: Alpes-Maritimes
+  postal_code: "06"
+  price_per_sqm:
+    - 18 
+    - 20 
+
+- department: Ardèche
+  postal_code: "07"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Ardennes
+  postal_code: "08"
+  price_per_sqm:
+    - 9
+    - 11 
+
+- department: Ariège
+  postal_code: "09"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Aube
+  postal_code: "10"
+  price_per_sqm:
+    - 10
+    - 12 
+
+- department: Aude
+  postal_code: "11"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Aveyron
+  postal_code: "12"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Bas-Rhin
+  postal_code: "67"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Bouches-du-Rhône
+  postal_code: "13"
+  price_per_sqm:
+    - 15 
+    - 17 
+
+- department: Calvados
+  postal_code: "14"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Cantal
+  postal_code: "15"
+  price_per_sqm:
+    - 8 
+    - 10 
+
+- department: Charente
+  postal_code: "16"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Charente-Maritime
+  postal_code: "17"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Cher
+  postal_code: "18"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Corrèze
+  postal_code: "19"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Corse-du-Sud
+  postal_code: "2A"
+  price_per_sqm:
+    - 13
+    - 15 
+
+- department: Côte-d'Or
+  postal_code: "21"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Côtes-d'Armor
+  postal_code: "22"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Creuse
+  postal_code: "23"
+  price_per_sqm:
+    - 8 
+    - 10 
+
+- department: Deux-Sèvres
+  postal_code: "79"
+  price_per_sqm:
+    - 8 
+    - 10 
+
+- department: Dordogne
+  postal_code: "24"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Doubs
+  postal_code: "25"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Drôme
+  postal_code: "26"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Essonne
+  postal_code: "91"
+  price_per_sqm:
+    - 17 
+    - 19 
+
+- department: Eure
+  postal_code: "27"
+  price_per_sqm:
+    - 11
+    - 13 
+
+- department: Eure-et-Loir
+  postal_code: "28"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Finistère
+  postal_code: "29"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Gard
+  postal_code: "30"
+  price_per_sqm:
+    - 11 
+    - 13
+
+- department: Gers
+  postal_code: "32"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Gironde
+  postal_code: "33"
+  price_per_sqm:
+    - 12 
+    - 14 
+
+- department: Guadeloupe
+  postal_code: "971"
+  price_per_sqm:
+    - 12 
+    - 14 
+
+- department: Guyane
+  postal_code: "973"
+  price_per_sqm:
+    - 13 
+    - 15 
+
+- department: Haut-Rhin
+  postal_code: "68"
+  price_per_sqm:
+    - 12 
+    - 14 
+
+- department: Haute-Corse
+  postal_code: "2B"
+  price_per_sqm:
+    - 13 
+    - 15 
+
+- department: Haute-Garonne
+  postal_code: "31"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Haute-Loire
+  postal_code: "43"
+  price_per_sqm:
+    - 9
+    - 11 
+
+- department: Haute-Marne
+  postal_code: "52"
+  price_per_sqm:
+    - 8 
+    - 10 
+
+- department: Haute-Saône
+  postal_code: "70"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Haute-Savoie
+  postal_code: "74"
+  price_per_sqm:
+    - 17 
+    - 19 
+
+- department: Haute-Vienne
+  postal_code: "87"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Hautes-Alpes
+  postal_code: "05"
+  price_per_sqm:
+    - 12
+    - 14 
+
+- department: Hautes-Pyrénées
+  postal_code: "65"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Hauts-de-Seine
+  postal_code: "92"
+  price_per_sqm:
+    - 27 
+    - 29 
+
+- department: Hérault
+  postal_code: "34"
+  price_per_sqm:
+    - 12 
+    - 14 
+
+- department: Île de Clipperton
+  postal_code: "989"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Ille-et-Vilaine
+  postal_code: "35"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Indre
+  postal_code: "36"
+  price_per_sqm:
+    - 8 
+    - 10 
+
+- department: Indre-et-Loire
+  postal_code: "37"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Isère
+  postal_code: "38"
+  price_per_sqm:
+    - 12 
+    - 14 
+
+- department: Jura
+  postal_code: "39"
+  price_per_sqm:
+    - 10
+    - 12 
+
+- department: La Réunion
+  postal_code: "974"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Landes
+  postal_code: "40"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Loir-et-Cher
+  postal_code: "41"
+  price_per_sqm:
+    - 9
+    - 11 
+
+- department: Loire
+  postal_code: "42"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Loire-Atlantique
+  postal_code: "44"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Loiret
+  postal_code: "45"
+  price_per_sqm:
+    - 10
+    - 12 
+
+- department: Lot
+  postal_code: "46"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Lot-et-Garonne
+  postal_code: "47"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Lozère
+  postal_code: "48"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Maine-et-Loire
+  postal_code: "49"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Manche
+  postal_code: "50"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Marne
+  postal_code: "51"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Martinique
+  postal_code: "972"
+  price_per_sqm:
+    - 12 
+    - 14 
+
+- department: Mayenne
+  postal_code: "53"
+  price_per_sqm:
+    - 8 
+    - 10 
+
+- department: Mayotte
+  postal_code: "976"
+  price_per_sqm:
+    - 13
+    - 14 
+
+- department: Meurthe-et-Moselle
+  postal_code: "54"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Meuse
+  postal_code: "55"
+  price_per_sqm:
+    - 9 
+    - 10 
+
+- department: Morbihan
+  postal_code: "56"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Moselle
+  postal_code: "57"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Nièvre
+  postal_code: "58"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Nord
+  postal_code: "59"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Nouvelle-Calédonie
+  postal_code: "988"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Oise
+  postal_code: "60"
+  price_per_sqm:
+    - 12 
+    - 14 
+
+- department: Orne
+  postal_code: "61"
+  price_per_sqm:
+    - 8 
+    - 10 
+
+- department: Paris
+  postal_code: "75"
+  price_per_sqm:
+    - 27 
+    - 30 
+
+- department: Pas-de-Calais
+  postal_code: "62"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Polynésie française
+  postal_code: "987"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Puy-de-Dôme
+  postal_code: "63"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Pyrénées-Atlantiques
+  postal_code: "64"
+  price_per_sqm:
+    - 12 
+    - 14 
+
+- department: Pyrénées-Orientales
+  postal_code: "66"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Rhône
+  postal_code: "69"
+  price_per_sqm:
+    - 14 
+    - 16 
+
+- department: Saint-Barthélemy
+  postal_code: "977"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Saint-Martin
+  postal_code: "978"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Saint-Pierre-et-Miquelon
+  postal_code: "975"
+  price_per_sqm:
+    - 11
+    - 13 
+
+- department: Saône-et-Loire
+  postal_code: "71"
+  price_per_sqm:
+    - 9 
+    - 11
+
+- department: Sarthe
+  postal_code: "72"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Savoie
+  postal_code: "73"
+  price_per_sqm:
+    - 12 
+    - 14 
+
+- department: Seine-et-Marne
+  postal_code: "77"
+  price_per_sqm:
+    - 15 
+    - 17 
+
+- department: Seine-Maritime
+  postal_code: "76"
+  price_per_sqm:
+    - 11
+    - 13 
+
+- department: Seine-Saint-Denis
+  postal_code: "93"
+  price_per_sqm:
+    - 19 
+    - 21 
+
+- department: Somme
+  postal_code: "80"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Tarn
+  postal_code: "81"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Tarn-et-Garonne
+  postal_code: "82"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Terres australes et antarctiques françaises
+  postal_code: "984"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Territoire de Belfort
+  postal_code: "90"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Val-d'Oise
+  postal_code: "95"
+  price_per_sqm:
+    - 18 
+    - 20 
+
+- department: Val-de-Marne
+  postal_code: "94"
+  price_per_sqm:
+    - 22 
+    - 24 
+
+- department: Var
+  postal_code: "83"
+  price_per_sqm:
+    - 14 
+    - 16 
+
+- department: Vaucluse
+  postal_code: "84"
+  price_per_sqm:
+    - 12 
+    - 14 
+
+- department: Vendée
+  postal_code: "85"
+  price_per_sqm:
+    - 10 
+    - 12 
+
+- department: Vienne
+  postal_code: "86"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Vosges
+  postal_code: "88"
+  price_per_sqm:
+    - 9
+    - 11 
+
+- department: Wallis et Futuna
+  postal_code: "986"
+  price_per_sqm:
+    - 11 
+    - 13 
+
+- department: Yonne
+  postal_code: "89"
+  price_per_sqm:
+    - 9 
+    - 11 
+
+- department: Yvelines
+  postal_code: "78"
+  price_per_sqm:
+    - 19 
+    - 21 

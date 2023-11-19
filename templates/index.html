@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homeverse - Find your dream house</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <ul class="header-top-list">
+
+          <li>
+            <a href="mailto:info@homeverse.com" class="header-top-link">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <span>info@homeverse.com</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="header-top-link">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>15/A, Nest Tower, NYC</address>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <ul class="header-top-social-list">
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+          <button class="header-top-btn">Add Listing</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="{{ url_for('static', filename='/images/logo.png') }}" alt="Homeverse logo">
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="{{ url_for('static', filename='/images/logo.png') }}" alt="Homeverse logo">
+            </a>
+
+            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="navbar-bottom">
+            <ul class="navbar-list">
+
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              </li>
+
+              <li>
+                <a href="#about" class="navbar-link" data-nav-link>About</a>
+              </li>
+
+              <li>
+                <a href="#service" class="navbar-link" data-nav-link>Service</a>
+              </li>
+
+              <li>
+                <a href="#property" class="navbar-link" data-nav-link>Property</a>
+              </li>
+
+              <li>
+                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+              </li>
+
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </nav>
+
+        <div class="header-bottom-actions">
+
+          <button class="header-bottom-actions-btn" aria-label="Search">
+            <ion-icon name="search-outline"></ion-icon>
+
+            <span>Search</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" aria-label="Profile">
+            <ion-icon name="person-outline"></ion-icon>
+
+            <span>Profile</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" aria-label="Cart">
+            <ion-icon name="cart-outline"></ion-icon>
+
+            <span>Cart</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+            <ion-icon name="menu-outline"></ion-icon>
+
+            <span>Menu</span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">
+              <ion-icon name="home"></ion-icon>
+
+              <span>Real Estate Agency</span>
+            </p>
+
+            <h2 class="h1 hero-title">Estimez votre maison de rêve avec notre solution d'IA</h2>
+
+            <p class="hero-text">
+              EstimaBâtir AI est votre partenaire idéal pour estimer le coût de construction de votre bien immobilier en un temps record. Nous vous proposons également les meilleurs fournisseurs de matériaux de construction en France pour réaliser votre projet dans les meilleures conditions.
+            </p>
+	
+            <button class="btn">Estimer</button>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="{{ url_for('static', filename='images/hero-banner.png') }}" alt="Modern house model" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+       <!-- 
+        - #application
+       -->
+    <div class="client-section-container">
+    <div class="client-section">
+        <div class="client-title">Ils nous font confiance</div>
+    </div>
+    <div class="client-list">
+        <div class="client">
+            <img src="{{ url_for('static', filename='client1.png') }}" alt="Client 1">
+        </div>
+        <div class="client">
+            <img src="{{ url_for('static', filename='client2.png') }}" alt="Client 2">
+        </div>
+        <div class="client">
+            <img src="{{ url_for('static', filename='client3.png') }}" alt="Client 3">
+        </div>
+        <div class="client">
+            <img src="{{ url_for('static', filename='client4.png') }}" alt="Client 4">
+        </div>
+    </div>
+   </div>
+    <section class="welcomeInputs">
+        <div class="welcomeInputsWrapper">
+            <div class="leftWelcome">
+                <label>Quelle est l'adresse de votre bien à estimer ?</label>
+                <div class="input-container">
+                    <span class="emoji">📍</span>
+                    <input class="hMCwOD" type="text" name="zipcode" id="zipcode" role="textbox" autocomplete="nope" placeholder="10, place de marché, 75001 Paris">
+                </div>
+            <label>Surface totale du terrain</label>
+            <input placeholder="Surface totale du terrain en m2" type="number" name="terrain" id="terrain"></input>
+            <label>Surface habitable</label>
+            <input placeholder="Surface habitable en m2" type="number" name="surface" id="surface">             
+        	<label>Réalisation des plans</label>
+                <select name="plans" id="plans">
+                    <option value="0">----</option>
+                    <option value="plan_simple">Plan simple</option>
+                    <option value="plan_standard">Plan standard</option>
+                    <option value="plan_sur_mesure">Plan sur mesure</option>
+                    <option value="plan_architecte">Plan par un architecte</option>
+                    <!-- ... More options ... -->
+                </select>
+                <label>Nombre de façades de bâtiment</label>
+                <select name="numFaçades" id="numFaçades">
+                    <option value="0">----</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label>Limites de hauteur de bien</label>
+                <select name="limitesHauteur" id="limitesHauteur">
+                    <option value="0">------</option>
+                    <option value="fondation">FONDATION</option>
+                    <option value="rdc">R.D.C</option>
+                    <option value="r+1etage">R + 1ere etage</option>
+                    <option value="r+2etage">R + 2eme etage</option>
+                    <option value="r+3etage">R + 3eme etage</option>
+                    <option value="r+4etage">R + 4eme etage</option>
+                    <option value="r+5etage">R + 5eme etage</option>
+                    <option value="r+6etage">R + 6eme etage</option>
+                    <option value="soussoul+r">SOUS SOUL + R</option>
+                    <option value="soussoul+1etage">SOUS SOUL + 1ere etage</option>
+                    <option value="soussoul+2etage">SOUS SOUL + 2eme etage</option>
+                    <option value="sousoul+3etage">SOUS SOUL + 3eme etage</option>
+                    <option value="soussoul+4etage">SOUS SOUL + 4eme etage</option>
+                    <option value="soussoul+5etage">SOUS SOUL + 5eme etage</option>
+                    <option value="soussoul+6etage">SOUS SOUL + 6eme etage</option>
+                </select>
+                <label>type de bien</label>
+                <select name="typeBien" id="typeBien">
+                    <option value="0">----</option>
+                    <option value="traditionnelle">immeuble traditionnelle</option>
+                    <option value="bois">immeuble en bois</option>
+                    <option value="contemporaine">immeuble contemporaine</option>
+                    <option value="ecologique">immeuble écologique</option>
+                    <option value="container">immeuble en container </option>
+                    <option value="brique">immeuble en brique</option>
+                    <!-- ... More options ... -->
+                </select>
+                <label>type de localisation du bien</label>
+                <select name="typeLocalisation" id="typeLocalisation">
+                    <option value="0">----</option>
+                    <option value="Semi-urbain">Semi-urbain</option>
+                    <option value="urbain">Urbain</option>
+                    <option value="rural">Rural</option>
+                    <option value="littoral">Littoral</option>
+                    <!-- ... More options ... -->
+                </select>
+                <div style="display: flex; justify-content: space-between;">
+                    <button class="saveButton" onclick="updateImage()">Calculer</button>
+                    <a href="{{ url_for('download_invoice') }}" class="saveButton" download> Télécharger votre facture</a>
+                    </div>            
+                    </div>
+            <div class="rightWelcome">
+                <img id="dynamicImage" src="{{ url_for('static', filename='construction.webp') }}" alt="Dynamic Image">
+            </div>
+        </div>
+    </section>
+    <!-- Your other sections -->
+    <section class="calculationResult">
+    <center>
+        <img style="width: 120px;" src="{{ url_for('static', filename='2.jpeg') }}" alt="">
+        <div class="calculation" >
+            <div class="title">
+                <p>main d'oeuvre</p>
+            </div>
+		<div class="calc" >
+		    <p style="display: inline;">de - <span id="value1" style="display: inline;">0</span> €</p>
+		    <p>à - <span id="value2" style="display: inline;">0</span> €</p>
+		</div>
+	</div>
+    </center>
+    <center>
+        <img style="width: 120px;" src="{{ url_for('static', filename='3.jpeg') }}" alt="">
+        <div class="calculation2">
+            <div class="title">
+                <p>materiaux</p>
+            </div>
+            <div class="calc">
+                <p style="display: inline;">de - <span id="value3" style="display: inline;">0</span> €</p>
+                <p>à - <span id="value4" style="display: inline;">0</span> €</p>
+            </div>
+        </div>
+    </center>
+    <center>
+        <img style="width: 120px;" src="{{ url_for('static', filename='1.jpeg') }}" alt="">
+        <div class="calculation3">
+            <div class="title">
+                <p>gros oeuvre</p>
+            </div>
+            <div class="calc">
+                <p style="display: inline;">de - <span id="value5" style="display: inline;">0</span> €</p>
+                <p>à - <span id="value6" style="display: inline;">0</span> €</p>
+            </div>
+        </div>
+    </center>
+    <center>
+        <img style="width: 120px;" src="{{ url_for('static', filename='4.jpeg') }}" alt="">
+        <div class="calculation4">
+            <div class="title">
+                <p>second d'oeuvre</p>
+            </div>
+            <div class="calc">
+                <p style="display: inline;">de - <span id="value7" style="display: inline;">0</span> €</p>
+                <p>à - <span id="value8" style="display: inline;">0</span> €</p>
+            </div>
+        </div>
+    </center>
+</section>
+<!-- ... Code HTML oussama ... -->
+<div class="center-container">
+    <div class="ghsgMZ">
+      <div class="sc-ghsgMZ kUuEeN">Prix de votre bien après la construction</div>
+      <div class="sc-dznXNo jtBzlX"><span id="value12" style="display: inline;">0</span>, avec notre solution AI surface habitale optimisation donne</div>
+      <div class="sc-kcbnda TkREF">
+        <div class="sc-ekulBa dqAcsz"><span id="value18" style="display: inline;">0</span> m²</div> 
+        <div class="sc-ekulBa dqAcsz"><span id="value16" style="display: inline;">0</span> pièces</div>
+        <div class="sc-ekulBa dqAcsz"><span id="value17" style="display: inline;">0</span> chambres</div>
+      </div>
+      <div class="sc-erNlkL edsBnE">
+        <div class="sc-FQuPU ezYXdu">
+          <div data-testid="resultTabs" role="tablist" aria-label="Tabs container" tabindex="0" class="sc-iIHSe dUaxwF">
+            <div id="selling" role="tab" aria-selected="true" aria-controls="panel-1" data-testid="resultTabs.Tab.selling" kind="primary" size="233" class="sc-cJOK cNPmyy">
+              <div class="sc-feryYK dGuMGC"></div>
+              Vente
+            </div>
+            <div id="renting" role="tab" aria-selected="false" aria-controls="panel-2" data-testid="resultTabs.Tab.renting" kind="primary" size="233" class="sc-cJOK cNPmyy">
+              <div class="sc-feryYK dGuMGC"></div>
+              Location
+            </div>
+          </div>
+        </div>
+        <div id="htmlBlock1">
+          <div id="selling" role="tabpanel">
+            <div class="sc-jKmXuR kGoWgp">
+              <div class="sc-ccSCjj dYVMvG">
+                <div class="sc-elNKlv gSZUaj">
+                  <div class="sc-ESoVU drEuLF">
+                    <div class="sc-bYwvMP eXGpSD">Prix bas</div>
+                    <div class="sc-bYwvMP bXyPcD">Prix net vendeur</div>
+                    <div class="sc-bYwvMP eXGpSD">Prix haut</div>
+                  </div>
+                  <div data-testid="estimation-result.result" class="sc-ESoVU drEuLF">
+                    <div data-testid="price-scale.low-price" class="sc-hUMlYv TDYiI"><p><span id="value9" style="display: inline;">0</span>€</p></div>
+                    <div data-testid="price-scale.price" class="sc-hUMlYv sc-hRmvpr gmLVaR"><p><span id="value10" style="display: inline;">0</span>€</p></div>
+                    <div data-testid="price-scale.high-price" class="sc-hUMlYv TDYiI"><p><span id="value11" style="display: inline;">0</span>€</p></div>
+                  </div>
+                  <div class="sc-ecaExY jFrbnx">
+                    <div class="sc-jMMfwr cLErmW"></div>
+                    <div class="sc-gbzWSY cwjJPF">
+                      <div size="16" class="sc-jqIZGH jRSNvV"></div>
+                      <div size="18" class="sc-jqIZGH iwnLcj"></div>
+                      <div size="16" class="sc-jqIZGH jRSNvV"></div>
+                    </div>
+                  </div>
+                </div>
+                <div data-testid="estimation-result.selling.trust-index" class="sc-jdfcpN HEeck">Indice de confiance : 4/5</div>
+                <div class="sc-eNNmBn kkBeUd" id=htmlBlock3>
+                  <form class="sc-gNJABI fvoLFN">
+                    <div class="sc-fjhmcy fCfUiw">Que pensez-vous de cette estimation&nbsp;?</div>
+                    <fieldset class="sc-yZwTr kbVFbL sc-bIqbHp gYGjTK">
+                      <div class="sc-gacfCG bHTapL">rating</div>
+                      <div class="sc-jxGEyO bDyhXz">
+                        <label class="sc-drlKqa fHAuuw">
+                          <input type="radio" name="rating" value="1" id="rating1" class="sc-dEfkYy ecwzKx">
+                          <div class="sc-cqPOvA cZzEaA">Trop basse</div>
+                        </label>
+                        <label class="sc-drlKqa fHAuuw">
+                          <input type="radio" name="rating" class="sc-dEfkYy ecwzKx" value="2" id="rating2">
+                          <div class="sc-cqPOvA cZzEaA">Basse</div>
+                        </label>
+                        <label class="sc-drlKqa fHAuuw">
+                          <input type="radio" name="rating" class="sc-dEfkYy ecwzKx" value="3" id="rating3">
+                          <div class="sc-cqPOvA cZzEaA">Juste</div>
+                        </label>
+                        <label class="sc-drlKqa fHAuuw">
+                          <input type="radio" name="rating" class="sc-dEfkYy ecwzKx" value="4" id="rating4">
+                          <div class="sc-cqPOvA cZzEaA">Haute</div>
+                        </label>
+                        <label class="sc-drlKqa fHAuuw">
+                          <input type="radio" name="rating" class="sc-dEfkYy ecwzKx" value="5" id="rating5">
+                          <div class="sc-cqPOvA cZzEaA">Trop haute</div>
+                        </label>
+                      </div>
+                    </fieldset>
+                    <!-- New input for feedback message -->
+                    <div class="sc-feedback-message">
+                      <label for="feedback">Votre avis</label>
+                      <textarea id="feedback" name="feedback" class="feedback-textarea" rows="4" cols="50" placeholder="Saisissez votre message ici..."></textarea>
+                    </div>
+                    <button id="submitButton"  class="sc-ckVGcZ jdCWFc">
+                      <span class="sc-hMqMXs eZQMAB">Envoyer</span>
+                    </button>
+                  </form>
+                </div>
+                <div class="sc-eNNmBn kkBeUd" id=htmlBlock4 style="display: none;">
+                  <div class="sc-eEieub critXC">
+                    <span class="YnMsZ">✅</span>
+                    <div class="sc-RbTVP iVFJLR">
+                      <strong>Merci d'avoir laissé votre avis</strong><br>cela nous permet d'améliorer notre service.
+                    </div>
+                  </div>
+                </div>
+                <div class="sc-kNBZmU gbaTgP">
+                  <strong>70 acheteurs</strong> recherchent une maison comme la vôtre.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="htmlBlock2" style="display: none;">
+          <div id="renting" role="tabpanel">
+            <div class="sc-jKmXuR kGoWgp">
+              <div class="sc-ccSCjj dYVMvG">
+                <div class="sc-elNKlv gSZUaj">
+                  <div class="sc-ESoVU drEuLF">
+                    <div class="sc-bYwvMP eXGpSD">Prix bas</div>
+                    <div class="sc-bYwvMP bXyPcD">Loyer hors charges</div>
+                    <div class="sc-bYwvMP eXGpSD">Prix haut</div>
+                  </div>
+                  <div data-testid="estimation-result.result" class="sc-ESoVU drEuLF">
+                    <div data-testid="price-scale.low-price" class="sc-hUMlYv TDYiI"><p><span id="value13" style="display: inline;">0</span> €</p></div>
+                    <div data-testid="price-scale.price" class="sc-hUMlYv sc-hRmvpr gmLVaR"><p><span id="value14" style="display: inline;">0</span>hc/mois</p></div>
+                    <div data-testid="price-scale.high-price" class="sc-hUMlYv TDYiI"><p><span id="value15" style="display: inline;">0</span> €</p></div>
+                  </div>
+                  <div class="sc-ecaExY jFrbnx">
+                    <div class="sc-jMMfwr cLErmW"></div>
+                    <div class="sc-gbzWSY cwjJPF">
+                      <div size="16" class="sc-jqIZGH jRSNvV"></div>
+                      <div size="18" class="sc-jqIZGH iwnLcj"></div>
+                      <div size="16" class="sc-jqIZGH jRSNvV"></div>
+                    </div>
+                  </div>
+                </div>
+                <div data-testid="estimation-result.selling.trust-index" class="sc-jdfcpN HEeck">Indice de confiance : 4/5</div>
+                <div class="sc-eopZyb dusWNw">
+                  <div data-testid="result-renting-contentInsert" class="sc-jGxEUC kxmWTb">
+                    <div class="sc-jdeSqf eIPTtt">Bon à savoir</div>
+                    <div class="sc-cBrjTV cTqirc wrap-after-13-words">
+                        Cette estimation, qui concerne le loyer hors charges locatives d'un bien loué non-meublé n'a qu'une valeur indicative et ne peut être opposable au bailleur.
+                        <a data-testid="result-renting-contentInsert-toggle" class="sc-iCwjlJ WJai"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- 
+        - #ABOUT
+      -->
+      <section class="about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="{{ url_for('static', filename='/images/pricese.jpeg') }}" alt="House interior">
+
+            <!-- <img src="{{ url_for('static', filename='/images/Smilovci-model-gif.gif') }}" alt="House interior" class="abs-img"> -->
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">Logiciel Bientôt Disponible.</h2>
+
+            <p class="about-text">
+            Plus de 39 000 personnes se sont inscrites sur la liste d'attente pour utiliser notre solution, Notre logiciel est une plateforme de conception d'immeubles générative alimentée par l'IA pour aider à concevoir des développements résidentiels optimaux en quelques minutes, plutôt qu'en mois, avec estimation en temps réel des prix. Adapté aux architectes et facile d'utilisation pour tout public.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+
+                <p class="about-item-text">Développement de conception optimisé par l'IA</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+
+                <p class="about-item-text">Analyse énergétique en temps réel</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="wine-outline"></ion-icon>
+                </div>
+
+                <p class="about-item-text">Estimations en temps réel</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="shield-checkmark-outline"></ion-icon>
+                </div>
+
+                <p class="about-item-text">Mesures et coûts</p>
+              </li>
+
+            </ul>
+
+            <p class="callout">
+              Découvrez comment chaque étape de la conception affecte la rentabilité du Projet. Nous vous montrons un résumé des coûts et des ratios en temps réel afin que vous puissiez concevoir non seulement avec créativité mais aussi avec rentabilité, Accélérer votre projet, réduire les coûts.
+            </p>
+
+            <a href="#service" class="btn">Nos services</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" id="service">
+        <div class="container">
+
+          <p class="section-subtitle">Nos services</p>
+
+          <h2 class="h2 section-title">Notre objectif principal</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{{url_for('static', filename='/images/service-1.png')}}" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="#">De meilleures décisions</a>
+                </h3>
+
+                <p class="card-text">
+Notre plateforme permet un aperçu détaillé de l'ensemble des données et du coût du projet en temps réel, permettant un contrôle total du projet pour améliorer le processus de prise de décision du concepteur. votre projet.
+                </p>
+
+                <a href="#" class="card-link">
+                  <span>Find A Home</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{{ url_for('static', filename='/images/service-2.png') }}" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="#">Conceptions optimales</a>
+                </h3>
+
+                <p class="card-text">
+Notre technologie de Machine Learning garantit une conception scientifiquement optimisée en ce qui concerne les paramètres quantitatifs pour permettre au concepteur de se concentrer sur la qualité architecturale de la conception.
+                </p>
+
+                <a href="#" class="card-link">
+                  <span>Find A Home</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{{ url_for('static', filename='/images/service-3.png') }}" alt="Service icon">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <a href="#">Estimation basée sur l'IA</a>
+                </h3>
+
+                <p class="card-text">
+Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de passer à l'action pour la vente ou la location. Obtenez une évaluation précise pour mieux planifier vos décisions immobilières
+                </p>
+
+                <a href="#" class="card-link">
+                  <span>Find A Home</span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROPERTY
+      -->
+
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="features">
+        <div class="container">
+
+          <p class="section-subtitle">Notre spécialité</p>
+
+          <h2 class="h2 section-title">Construction</h2>
+
+          <ul class="features-list">
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="car-sport-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Parking</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="water-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Piscine</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Espace privée</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="fitness-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Centre médical</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="library-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Espace Bibliothèque</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="bed-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">chambres</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Maisons intelligentes</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="football-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Terrain de jeu</h3>
+
+                <div class="card-btn">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">News & Blogs</p>
+
+          <h2 class="h2 section-title">Leatest News Feeds</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="{{ url_for('static', filename='/images/blog-1.png') }}" alt="The Most Inspiring Interior Design Of 2021" class="w-100">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-content-top">
+
+                    <ul class="card-meta-list">
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="person"></ion-icon>
+
+                          <span>by: Admin</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="pricetags"></ion-icon>
+
+                          <span>Interior</span>
+                        </a>
+                      </li>
+
+                    </ul>
+
+                    <h3 class="h3 blog-title">
+                      <a href="#">The Most Inspiring Interior Design Of 2021</a>
+                    </h3>
+
+                  </div>
+
+                  <div class="blog-content-bottom">
+                    <div class="publish-date">
+                      <ion-icon name="calendar"></ion-icon>
+
+                      <time datetime="2022-27-04">Apr 27, 2022</time>
+                    </div>
+
+                    <a href="#" class="read-more-btn">Read More</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="{{ url_for('static', filename='/images/blog-2.jpg') }}" alt="Recent Commercial Real Estate Transactions" class="w-100">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-content-top">
+
+                    <ul class="card-meta-list">
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="person"></ion-icon>
+
+                          <span>by: Admin</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="pricetags"></ion-icon>
+
+                          <span>Estate</span>
+                        </a>
+                      </li>
+
+                    </ul>
+
+                    <h3 class="h3 blog-title">
+                      <a href="#">Recent Commercial Real Estate Transactions</a>
+                    </h3>
+
+                  </div>
+
+                  <div class="blog-content-bottom">
+                    <div class="publish-date">
+                      <ion-icon name="calendar"></ion-icon>
+
+                      <time datetime="2022-27-04">Apr 27, 2022</time>
+                    </div>
+
+                    <a href="#" class="read-more-btn">Read More</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="{{ url_for('static', filename='/images/blog-3.jpg') }}" alt="Renovating a Living Room? Experts Share Their Secrets"
+                    class="w-100">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-content-top">
+
+                    <ul class="card-meta-list">
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="person"></ion-icon>
+
+                          <span>by: Admin</span>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card-meta-link">
+                          <ion-icon name="pricetags"></ion-icon>
+
+                          <span>Room</span>
+                        </a>
+                      </li>
+
+                    </ul>
+
+                    <h3 class="h3 blog-title">
+                      <a href="#">Renovating a Living Room? Experts Share Their Secrets</a>
+                    </h3>
+
+                  </div>
+
+                  <div class="blog-content-bottom">
+                    <div class="publish-date">
+                      <ion-icon name="calendar"></ion-icon>
+
+                      <time datetime="2022-27-04">Apr 27, 2022</time>
+                    </div>
+
+                    <a href="#" class="read-more-btn">Read More</a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      <!-- 
+        - #Contact us
+      -->
+	<div class="contact" id="contact">
+        <form action="/submit" method="post">
+            <h2>Contact Us</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="custom-button">Submit</button>
+            </div>
+        </form>
+    </div>
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container">
+
+          <div class="cta-card">
+            <div class="card-content">
+              <h2 class="h2 card-title">A la recherche d'une maison de rêve ?</h2>
+
+              <p class="card-text">Nous pouvons vous aider à réaliser votre rêve d'une nouvelle maison</p>
+            </div>
+
+            <button class="btn cta-btn">
+              <span>Explore Properties</span>
+
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{{ url_for('static', filename='/images/logo-light.png') }}" alt="Homeverse logo">
+          </a>
+
+          <p class="section-text">
+            Évaluez le coût de construction de votre maison en un clic, rapidement et gratuitement.
+          </p>
+
+          <ul class="contact-list">
+
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>Paris, France</address>
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+0123456789" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <span>+0123-456789</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:contact@homeverse.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>contact@homeverse.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">All Products</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Locations Map</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Services</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Login</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">My account</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Promotional Offers</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Customer Care</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Login</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">My account</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{{ url_for('static', filename='assets/js/script.js') }}"></script>
+
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+<script>
+    function updateImage() {
+        // Get the selected value from the "Limites de hauteur de bien" dropdown
+        const selectedOption = document.getElementById("limitesHauteur").value;
+
+        // Define a mapping of options to image sources
+        const imageSources = {
+            "fondation": "{{ url_for('static', filename='fondation.jpeg') }}",
+            "rdc": "{{ url_for('static', filename='RDC.jpeg') }}",
+            "r+1etage": "{{ url_for('static', filename='RDC+1etage.jpeg') }}",
+            "r+2etage": "{{ url_for('static', filename='RDC+2etage.jpeg') }}",
+            "r+3etage": "{{ url_for('static', filename='RDC+3etage.jpeg') }}",
+            "r+4etage": "{{ url_for('static', filename='RDC+4etage.jpeg') }}",
+            "r+5etage": "{{ url_for('static', filename='RDC+5etage.jpeg') }}",
+            "r+6etage": "{{ url_for('static', filename='RDC+6etage.jpeg') }}",
+            "soussoul+r": "{{ url_for('static', filename='sous+sol+RDC.jpeg') }}",
+            "soussoul+1etage": "{{ url_for('static', filename='soussol+RDC+1etage.jpeg') }}",
+            "soussoul+2etage": "{{ url_for('static', filename='SOUS_sol+RDC+2etage.jpeg') }}",
+            "soussoul+3etage": "{{ url_for('static', filename='sous+sol+RDC+3etage.jpeg') }}",
+            "soussoul+4etage": "{{ url_for('static', filename='soussol+RDC+4etage.jpeg') }}",
+            "soussoul+5etage": "{{ url_for('static', filename='sousso+rdc+5 etage.jpeg') }}",
+            "soussoul+6etage": "{{ url_for('static', filename='sous+sol+RDC+6etage.jpeg') }}"
+        };
+
+        // Get the image element
+        const dynamicImage = document.getElementById("dynamicImage");
+
+        // Update the image source based on the selected option
+        if (imageSources[selectedOption]) {
+            dynamicImage.src = imageSources[selectedOption];
+        } else {
+            // If no matching source found, you can set a default image or display an error message
+            dynamicImage.src = "{{ url_for('static', filename='construction.webp') }}";
+        }
+        var zipcode = document.getElementById('zipcode').value;
+        const terrain = document.getElementById('terrain').value;
+        const surface = document.getElementById('surface').value;
+        const plans = document.getElementById('plans').value;
+        const num_facades = document.getElementById('numFaçades').value;
+        const limites_hauteur = document.getElementById('limitesHauteur').value;
+        const type_bien = document.getElementById('typeBien').value;
+        const type_Localisation = document.getElementById('typeLocalisation').value;
+
+        // You can send the input value to Python using an AJAX request or another method of your choice
+        // Here, we'll just display the value in the console as an example
+        // Create a data object
+        const data = {
+            zipcode,
+            terrain,
+            surface,
+            plans,
+            num_facades,
+            limites_hauteur,
+            type_bien,
+            type_Localisation,
+        };
+
+        // Send the data to the server
+        fetch('/calculate', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(result => {
+            // Handle the server response here (e.g., update the UI with the result)
+            console.log('Server response:', result);
+            // Update the HTML values
+            document.getElementById('value1').textContent = result.value1;
+            document.getElementById('value2').textContent = result.value2;
+            document.getElementById('value3').textContent = result.value3;
+            document.getElementById('value4').textContent = result.value4;
+            document.getElementById('value5').textContent = result.value5;
+            document.getElementById('value6').textContent = result.value6;
+            document.getElementById('value7').textContent = result.value7;
+            document.getElementById('value8').textContent = result.value8;
+            document.getElementById('value9').textContent = result.value9;
+            document.getElementById('value10').textContent = result.value10;
+            document.getElementById('value11').textContent = result.value11;
+            document.getElementById('value12').textContent = result.value12;
+            document.getElementById('value13').textContent = result.value13;
+            document.getElementById('value14').textContent = result.value14;
+            document.getElementById('value15').textContent = result.value15;
+            document.getElementById('value16').textContent = result.value16;
+            document.getElementById('value17').textContent = result.value17;
+            document.getElementById('value18').textContent = result.value18;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+    window.onload = updateImage;
+    const sellingTab = document.getElementById("selling");
+    const rentingTab = document.getElementById("renting");
+    const htmlBlock1 = document.getElementById("htmlBlock1");
+    const htmlBlock2 = document.getElementById("htmlBlock2");
+    sellingTab.addEventListener("click", () => {
+      // Activate selling tab
+      sellingTab.setAttribute("aria-selected", "true");
+      sellingTab.classList.add("active");
+
+      // Deactivate renting tab
+      rentingTab.setAttribute("aria-selected", "false");
+      rentingTab.classList.remove("active");
+
+      // Show HTML block 1 and hide block 2
+      htmlBlock1.style.display = "block";
+      htmlBlock2.style.display = "none";
+    });
+
+    rentingTab.addEventListener("click", () => {
+      // Activate renting tab
+      rentingTab.setAttribute("aria-selected", "true");
+      rentingTab.classList.add("active");
+
+      // Deactivate selling tab
+      sellingTab.setAttribute("aria-selected", "false");
+      sellingTab.classList.remove("active");
+
+      // Show HTML block 2 and hide block 1
+      htmlBlock1.style.display = "none";
+      htmlBlock2.style.display = "block";
+    });
+
+    document.getElementById("submitButton").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    const feedbackValue = document.getElementById("feedback").value;
+    const ratingLabels = document.querySelectorAll('input[name="rating"]:checked');
+    const selectedRating = ratingLabels.length > 0 ? ratingLabels[0].value : null;
+
+    if (selectedRating && feedbackValue) {
+      console.log("Rating:", selectedRating);
+      console.log("Feedback message:", feedbackValue);
+      fetch('/submit_feedback', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    rating: selectedRating,
+                    feedback: feedbackValue
+                })
+            })
+      .then(response => response.json())
+      .then(data => {
+                // Handle the response from the server if needed
+                console.log(data);
+            })
+      .catch(error => {
+                console.error('Error:', error);
+            });
+      // Hide htmlBlock3 and display htmlBlock4
+      document.getElementById("htmlBlock3").style.display = "none";
+      document.getElementById("htmlBlock4").style.display = "block";
+    } else {
+      console.log("Please select a rating and provide feedback.");
+    }
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#contactForm').submit(function(e){
+            e.preventDefault();
+            var formData = $(this).serialize();
+            
+            $.ajax({
+                type: 'POST',
+                url: '/contact',
+                data: formData,
+                success: function(response){
+                    console.log(response);
+                    // Handle success (e.g., display a success message)
+                },
+                error: function(error){
+                    console.log(error);
+                    // Handle error
+                }
+            });
+        });
+    });
+</script>
+</html>
