@@ -8,3 +8,4 @@ MarkupSafe==2.1.1
 Werkzeug==2.2.2
 zipp==3.10.0
 toml==0.10.2
+reportlab=4.0.6
