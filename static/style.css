@@ -1656,70 +1656,94 @@ button, a { transition: var(--transition); }
 
 
 /* Welcome Inputs section styles */
+/* Common styles for both mobile and computer screens */
 .welcomeInputs {
     background-color: #fff;
     padding: 20px;
 }
 
-.welcomeInputsWrapper {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 200px;
+/* Styles for computer screens */
+@media (min-width: 768px) {
+    .welcomeInputsWrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 200px;
+    }
+
+    .rightWelcome {
+        width: 48%;
+    }
+
+    .leftWelcome label,
+    .leftWelcome select {
+        display: block;
+        margin: 10px 0;
+        margin-left: 0px;
+    }
+
+    .saveButton {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 }
 
-.rightWelcome {
-    width: 48%;
-}
+/* Styles for mobile screens */
+@media (max-width: 767px) {
+    .welcomeInputsWrapper {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
 
-.leftWelcome label, .leftWelcome select {
-    display: block;
-    margin: 10px 0;
-    margin-left: 0px;
-}
+    .rightWelcome {
+        width: 100%; /* Full width for smaller screens */
+        margin-top: 20px; /* Add margin for better spacing */
+    }
 
-.saveButton {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .leftWelcome label,
+    .leftWelcome select {
+        margin-left: 0px;
+    }
 
+        .saveButton {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 2px;
+    }
+}
 
 
 /* Calculation Result section styles */
 /* Add this CSS for the new structure */
+/* Common styles for all screens */
+/* Common styles for all screens */
 .calculationResult {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    margin: 20px 
+    margin: 20px;
 }
-#dynamicImage {
-    max-width: 430px;
-    max-height: 430px;
-    position: relative;
+.main_oeuvre {
+	margin-left: 200px;
 }
-
-/* Your existing CSS styles for the welcomeInputs section */
-
-
-.rightWelcome img {
-    max-width: 430px;
-    max-height: 430px;
-    position: relative;
+.second_oeuvre {
+	margin-right: 200px;
 }
 
-/* Additional CSS for the option images */
+#dynamicImage,
+.rightWelcome img,
 .rightWelcome img option {
-    max-width: 430px;
-    max-height: 430px;
+    max-width: 100%; /* Adjust images to fit container width */
+    height: auto; /* Maintain aspect ratio */
     position: relative;
 }
-
-With this CSS, both the dynamic image and the option images will be constrained to a maximum size of 512x512 pixels while having a position: relative; style. You can then adjust their positioning using CSS positioning properties if needed.
 
 .calculationColumn {
     text-align: center;
@@ -1729,8 +1753,41 @@ With this CSS, both the dynamic image and the option images will be constrained 
     border: 1px solid #ddd; /* Add a border for each column */
 }
 
+/* Media query for screens smaller than 768px (example: mobile screens) */
+@media (max-width: 767px) {
+    .calculationResult {
+        flex-direction: column; /* Stack columns on smaller screens */
+        align-items: stretch; /* Stretch items vertically */
+    }
+
+    .calculationColumn {
+        margin-top: 20px; /* Adjust margin between columns */
+    }
+    
+    .main_oeuvre {
+	margin-left: 20px;
+	}
+    .second_oeuvre {
+	margin-right: 20px;
+	}
+}
+
+/* Media query for screens larger than 768px (example: computer screens) */
+@media (min-width: 768px) {
+    .calculationColumn {
+        margin: 0 10px; /* Adjust margin for better spacing between columns */
+    }
+        .main_oeuvre {
+	margin-left: 200px;
+	}
+    .second_oeuvre {
+	margin-right: 200px;
+	}
+}
+
 /* Style for the images and titles */
-.calculationColumn img, .calculationColumn .title {
+.calculationColumn img,
+.calculationColumn .title {
     margin-bottom: 10px;
 }
 
@@ -1739,11 +1796,15 @@ With this CSS, both the dynamic image and the option images will be constrained 
 }
 
 /* Span styles within Calculation, Calculation2, Calculation3, and Calculation4 */
-.calculation span, .calculation2 span, .calculation3 span, .calculation4 span {
+/* Common styles for all screens */
+.calculation span,
+.calculation2 span,
+.calculation3 span,
+.calculation4 span {
     font-weight: bold;
     color: #333;
+    
 }
-
 
 .client-section {
     text-align: center;
@@ -1754,31 +1815,71 @@ With this CSS, both the dynamic image and the option images will be constrained 
     background-color: white;
     padding: 10px;
     border-radius: 100px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
-    margin-left: 150px;
-    margin-right: 150px;
-    margin: 20px 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px; /* Common margin for all screens */
 }
+
 .client-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    
 }
 
 .client {
     display: inline-block;
     margin: 0px 20px; /* Adjust the margin as needed */
-    margin-left: 200px;
-    
-}
-.client {
     text-align: center;
-    
+    margin-left: 200px;
 }
+
 .client img {
     max-width: 150px; /* Adjust the maximum width as needed */
     height: auto;
+}
+
+/* Media query for screens smaller than 768px (example: mobile screens) */
+@media (max-width: 380px) {
+    .client-section-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .client {
+        margin: 0 10px; /* Adjust margins for smaller screens */
+    }
+    .client img {
+    max-width: 150px; /* Adjust the maximum width as needed */
+    height: auto;
+    margin-left: 70px;
+}
+    
+
+}
+
+@media (max-width: 767px) and (min-width: 380px){
+    .client-section-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .client {
+        margin: 0 10px; /* Adjust margins for smaller screens */
+    }
+    
+}
+
+/* Media query for screens larger than 768px (example: computer screens) */
+@media (min-width: 768px) {
+    .client {
+    display: inline-block;
+    margin: 0px 20px; /* Adjust the margin as needed */
+    text-align: center;
+    margin-left: 200px;
+	}
+	.client img {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto;
+}
 }
 
 /* Your existing CSS styles */
@@ -1792,7 +1893,7 @@ With this CSS, both the dynamic image and the option images will be constrained 
 .calc p {
     font-size: 16px;
     color: #333;
-    margin: 0px;
+    margin: 0;
 }
 
 .calc span {
@@ -1800,19 +1901,19 @@ With this CSS, both the dynamic image and the option images will be constrained 
 }
 
 /* Style the container with class "ghsgMZ" */
+/* Common styles for all screens */
 .center-container {
-display: flex;
-justify-content: center;
-align-items: center;
-
-margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; /* Adjust margin for different screens */
 }
 
 .sc-ghsgMZ.kUuEeN {
     font-weight: 900;
-    font-size: 3.4rem;
+    font-size: 2.8rem; /* Adjust font size for smaller screens */
     color: rgb(43, 43, 43);
-    margin-bottom: 8px;
+    margin-bottom: 6px; /* Adjust margin for smaller screens */
 }
 
 .sc-kcbnda.TkREF {
@@ -1823,13 +1924,31 @@ margin-bottom: 100px;
 }
 
 .dqAcsz {
-    font-size: 1.4rem;
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
     border-radius: 4px;
     color: rgb(255, 255, 255);
-    padding: 3px 8px;
-    margin: 0px 4px;
+    padding: 2px 6px; /* Adjust padding for smaller screens */
+    margin: 0px 2px; /* Adjust margin for smaller screens */
     background: rgb(86, 92, 183);
     text-align: center;
+}
+
+/* Media query for screens smaller than 768px (example: mobile screens) */
+@media (max-width: 767px) {
+    .center-container {
+        margin-bottom: 30px; /* Adjust margin for smaller screens */
+    }
+
+    .sc-ghsgMZ.kUuEeN {
+        font-size: 2.4rem; /* Adjust font size for smaller screens */
+        margin-bottom: 4px; /* Adjust margin for smaller screens */
+    }
+
+    .dqAcsz {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        padding: 1px 4px; /* Adjust padding for smaller screens */
+        margin: 0px 1px; /* Adjust margin for smaller screens */
+    }
 }
 
 .dqAcsz:first-child {
@@ -1849,22 +1968,20 @@ margin-bottom: 100px;
     cursor: pointer;
     user-select: none;
     display: flex;
-    -moz-box-pack: center;
     justify-content: center;
-    -moz-box-align: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px; /* Adjust font size for smaller screens */
     font-weight: 600;
-    height: 48px;
-    padding-left: 16px;
-    padding-right: 16px;
+    height: 40px; /* Adjust height for smaller screens */
+    padding-left: 12px; /* Adjust padding for smaller screens */
+    padding-right: 12px; /* Adjust padding for smaller screens */
     color: rgb(43, 43, 43);
-    min-width: 233px;
+    min-width: 200px; /* Adjust width for smaller screens */
 }
 
 .cNPmyy {
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px; /* Adjust font size for smaller screens */
     font-weight: 600;
     color: rgb(43, 43, 43);
 }
@@ -1885,25 +2002,7 @@ margin-bottom: 100px;
       outline-width: medium;
 }
 
-.edsBnE {
-    background: rgb(255, 255, 255);
-      background-color: rgb(255, 255, 255);
-      background-position-x: 0%;
-      background-position-y: 0%;
-      background-repeat: repeat;
-      background-attachment: scroll;
-      background-image: none;
-      background-size: auto;
-      background-origin: padding-box;
-      background-clip: border-box;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px;
-    padding: 20px 15px;
-      padding-top: 20px;
-      padding-right: 15px;
-      padding-bottom: 20px;
-      padding-left: 15px;
-    margin-top: 24px;
-}
+
 
 .edsBnE {
   background: rgb(255, 255, 255);
@@ -1924,6 +2023,14 @@ margin-bottom: 100px;
   padding-left: 15px;
   margin-top: 24px;
   transition: all 0.3s ease; /* Add a transition for smooth animation */
+}
+
+/* Media query for screens smaller than 768px (example: mobile screens) */
+@media (max-width: 767px) {
+  .edsBnE {
+    padding: 15px; /* Adjust padding for smaller screens */
+    margin-top: 12px; /* Adjust margin for smaller screens */
+  }
 }
 
 .wrap-after-13-words {
@@ -2635,4 +2742,23 @@ input[type="submit"]:hover {
     background-color: darkblue; /* Change color on hover */
     /* Additional styling for hover state */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

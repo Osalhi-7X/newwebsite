@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homeverse - Find your dream house</title>
+  <title>Mondevisconstruction - Trouvez la maison de vos rêves</title>
 
   <!-- 
     - favicon
@@ -47,7 +47,7 @@
             <a href="mailto:info@homeverse.com" class="header-top-link">
               <ion-icon name="mail-outline"></ion-icon>
 
-              <span>info@homeverse.com</span>
+              <span>info@mondevisconstruction.com</span>
             </a>
           </li>
 
@@ -55,7 +55,7 @@
             <a href="#" class="header-top-link">
               <ion-icon name="location-outline"></ion-icon>
 
-              <address>15/A, Nest Tower, NYC</address>
+              <address>Paris, France</address>
             </a>
           </li>
 
@@ -87,10 +87,8 @@
                 <ion-icon name="logo-pinterest"></ion-icon>
               </a>
             </li>
-
           </ul>
-
-          <button class="header-top-btn">Add Listing</button>
+          <button class="header-top-btn">réseaux</button>
         </div>
 
       </div>
@@ -121,27 +119,29 @@
             <ul class="navbar-list">
 
               <li>
-                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                <a href="#home" class="navbar-link" data-nav-link>Application</a>
               </li>
 
               <li>
-                <a href="#about" class="navbar-link" data-nav-link>About</a>
+                <a href="#about" class="navbar-link" data-nav-link>À propos</a>
               </li>
 
               <li>
                 <a href="#service" class="navbar-link" data-nav-link>Service</a>
               </li>
-
+              
+	     <!-- 
               <li>
                 <a href="#property" class="navbar-link" data-nav-link>Property</a>
               </li>
-
+  	     -->
+  	     
               <li>
                 <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
               </li>
 
               <li>
-                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+                <a href="#contact" class="navbar-link" data-nav-link>Nous contacter</a>
               </li>
 
             </ul>
@@ -209,9 +209,12 @@
             <p class="hero-text">
               EstimaBâtir AI est votre partenaire idéal pour estimer le coût de construction de votre bien immobilier en un temps record. Nous vous proposons également les meilleurs fournisseurs de matériaux de construction en France pour réaliser votre projet dans les meilleures conditions.
             </p>
-	
-            <button class="btn">Estimer</button>
-
+	<nav class="navbar">
+	  <ul>
+	    <li><button onclick="scrollToSection()" class="btn">Estimer</button></li>
+	    <!-- Other navbar buttons -->
+	  </ul>
+	</nav>
           </div>
 
           <figure class="hero-banner">
@@ -243,7 +246,7 @@
         </div>
     </div>
    </div>
-    <section class="welcomeInputs">
+    <section id="welcomeInputsSection" class="welcomeInputs">
         <div class="welcomeInputsWrapper">
             <div class="leftWelcome">
                 <label>Quelle est l'adresse de votre bien à estimer ?</label>
@@ -323,7 +326,7 @@
     </section>
     <!-- Your other sections -->
     <section class="calculationResult">
-    <center>
+    <center class="main_oeuvre">
         <img style="width: 120px;" src="{{ url_for('static', filename='2.jpeg') }}" alt="">
         <div class="calculation" >
             <div class="title">
@@ -359,7 +362,7 @@
             </div>
         </div>
     </center>
-    <center>
+    <center class=second_oeuvre>
         <img style="width: 120px;" src="{{ url_for('static', filename='4.jpeg') }}" alt="">
         <div class="calculation4">
             <div class="title">
@@ -529,7 +532,7 @@
 
           <div class="about-content">
 
-            <p class="section-subtitle">About Us</p>
+            <p class="section-subtitle">à propos de nous</p>
 
             <h2 class="h2 section-title">Logiciel Bientôt Disponible.</h2>
 
@@ -844,7 +847,7 @@ Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de 
       <!-- 
         - #BLOG
       -->
-
+<!-- 
       <section class="blog" id="blog">
         <div class="container">
 
@@ -1015,22 +1018,23 @@ Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de 
 
         </div>
       </section>
+     -->
       <!-- 
         - #Contact us
       -->
 	<div class="contact" id="contact">
         <form action="/submit" method="post">
-            <h2>Contact Us</h2>
+            <h2>Nous contacter</h2>
             <div class="form-group">
-                <label for="name">Name:</label>
+                <label for="name">Nom:</label>
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-                <label for="email">Email:</label>
+                <label for="email">Adresse mail:</label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="phone">Phone Number:</label>
+                <label for="phone">Numéro de téléphone:</label>
                 <input type="tel" id="phone" name="phone" required>
             </div>
             <div class="form-group">
@@ -1038,7 +1042,7 @@ Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de 
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" class="custom-button">Submit</button>
+                <button type="submit" class="custom-button">Envoyer</button>
             </div>
         </form>
     </div>
@@ -1057,7 +1061,7 @@ Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de 
             </div>
 
             <button class="btn cta-btn">
-              <span>Explore Properties</span>
+              <span>Explorer les propriétés</span>
 
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </button>
@@ -1114,7 +1118,7 @@ Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de 
               <a href="mailto:contact@homeverse.com" class="contact-link">
                 <ion-icon name="mail-outline"></ion-icon>
 
-                <span>contact@homeverse.com</span>
+                <span>contact@mondevisconstruction.com</span>
               </a>
             </li>
 
@@ -1155,31 +1159,30 @@ Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de 
           <ul class="footer-list">
 
             <li>
-              <p class="footer-list-title">Company</p>
+              <p class="footer-list-title">L'entreprise</p>
             </li>
 
             <li>
-              <a href="#" class="footer-link">About</a>
+              <a href="#" class="footer-link">Qui sommes-nous ?</a>
             </li>
 
             <li>
               <a href="#" class="footer-link">Blog</a>
             </li>
-
+	    
+  	    <!-- 
             <li>
               <a href="#" class="footer-link">All Products</a>
             </li>
+            
 
             <li>
               <a href="#" class="footer-link">Locations Map</a>
             </li>
+            -->
 
             <li>
-              <a href="#" class="footer-link">FAQ</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Contact us</a>
+              <a href="#" class="footer-link">Nous contacter</a>
             </li>
 
           </ul>
@@ -1187,9 +1190,9 @@ Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de 
           <ul class="footer-list">
 
             <li>
-              <p class="footer-list-title">Services</p>
+              <p class="footer-list-title">A propos</p>
             </li>
-
+           <!-- 
             <li>
               <a href="#" class="footer-link">Order tracking</a>
             </li>
@@ -1197,7 +1200,7 @@ Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de 
             <li>
               <a href="#" class="footer-link">Wish List</a>
             </li>
-
+          
             <li>
               <a href="#" class="footer-link">Login</a>
             </li>
@@ -1205,19 +1208,24 @@ Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de 
             <li>
               <a href="#" class="footer-link">My account</a>
             </li>
-
+	   -->
             <li>
               <a href="#" class="footer-link">Terms & Conditions</a>
             </li>
-
+            
+             <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+            
+            <!--
             <li>
               <a href="#" class="footer-link">Promotional Offers</a>
             </li>
-
+            -->
           </ul>
-
+	
           <ul class="footer-list">
-
+	   <!--
             <li>
               <p class="footer-list-title">Customer Care</p>
             </li>
@@ -1245,9 +1253,8 @@ Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de 
             <li>
               <a href="#" class="footer-link">Contact us</a>
             </li>
-
+	-->
           </ul>
-
         </div>
 
       </div>
@@ -1257,7 +1264,7 @@ Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de 
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+          &copy; 2023 <a href="#">mondevisconstruction</a>. All Rights Reserved
         </p>
 
       </div>
@@ -1468,5 +1475,13 @@ Avec notre logiciel d'IA, vous pourrez estimer la valeur de votre bien avant de 
             });
         });
     });
+</script>
+<script>
+  function scrollToSection() {
+    const welcomeInputsSection = document.getElementById('welcomeInputsSection');
+    if (welcomeInputsSection) {
+      welcomeInputsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 </script>
 </html>
