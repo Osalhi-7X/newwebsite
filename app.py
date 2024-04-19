@@ -455,6 +455,33 @@ def second_oeuvre(second_oeuvre_list, surface, limites_hauteur):
 def index():
     x = 0 
     return render_template('index.html', x=x)
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
+@app.route('/article1')
+def article1():
+    return render_template('article1.html')
+@app.route('/article2')
+def article2():
+    return render_template('article2.html')
+@app.route('/article3')
+def article3():
+    return render_template('article3.html')
+@app.route('/article4')
+def article4():
+    return render_template('article4.html')
+@app.route('/article5')
+def article5():
+    return render_template('article5.html')
+@app.route('/article6')
+def article6():
+    return render_template('article6.html')
+@app.route('/article7')
+def article7():
+    return render_template('article7.html')
+@app.route('/article8')
+def article8():
+    return render_template('article8.html')
 @app.route('/download_invoice', methods=['GET'])
 def download_invoice():
     return send_file('invoice.pdf', as_attachment=True)
@@ -512,16 +539,16 @@ def calculate():
         create_invoice(invoice_data, 'invoice.pdf')
         materieux_totale_prince = Materiaux_totale_price(Materiaux_list, int(surface), limites_hauteur, type_bien, type_Localisation, plans)
         materieux_mag = materieux_totale_prince * 1.2
-        print("materieux_totale_prince: ", "de : ", int(materieux_totale_prince), " à : ", int(materieux_mag))
+        #print("materieux_totale_prince: ", "de : ", int(materieux_totale_prince), " à : ", int(materieux_mag))
         gros_oeuvre_totale_prince = gros_oeuvre(gros_oeuvre_list, int(surface), limites_hauteur)
         gros_oeuvre_mag = gros_oeuvre_totale_prince * 1.2
-        print("gros_oeuvre_totale_prince: ", "de : ", int(gros_oeuvre_totale_prince), " à : ", int(gros_oeuvre_mag))
+        #print("gros_oeuvre_totale_prince: ", "de : ", int(gros_oeuvre_totale_prince), " à : ", int(gros_oeuvre_mag))
         main_oeuvre_totale_prince = main_oeuvre(main_oeuvre_list, int(surface), limites_hauteur)
         main_oeuvre_mag = main_oeuvre_totale_prince * 1.2
-        print("main_oeuvre_totale_prince: ", "de : ", int(main_oeuvre_totale_prince), " à : ", int(main_oeuvre_mag))
+        #print("main_oeuvre_totale_prince: ", "de : ", int(main_oeuvre_totale_prince), " à : ", int(main_oeuvre_mag))
         second_oeuvre_totale_prince = second_oeuvre(second_oeuvre_list, int(surface), limites_hauteur)
         second_oeuvre_mag = second_oeuvre_totale_prince * 1.2
-        print("second_oeuvre_totale_prince: ", "de : ", int(second_oeuvre_totale_prince), " à : ", int(second_oeuvre_mag))
+        #print("second_oeuvre_totale_prince: ", "de : ", int(second_oeuvre_totale_prince), " à : ", int(second_oeuvre_mag))
         result = {
             'value1': int(main_oeuvre_totale_prince),
             'value2': int(main_oeuvre_mag),
@@ -543,6 +570,6 @@ def calculate():
 			'value18':int(surface)
         }
         return jsonify(result)
-
+    
 if __name__ == '__main__':
     app.run(debug=True)

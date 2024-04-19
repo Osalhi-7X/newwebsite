@@ -1719,6 +1719,10 @@ button, a { transition: var(--transition); }
 }
 
 
+.script-container {
+	left:  -10px;
+}
+
 /* Calculation Result section styles */
 /* Add this CSS for the new structure */
 /* Common styles for all screens */
@@ -1855,6 +1859,19 @@ button, a { transition: var(--transition); }
     
 
 }
+
+.script-container-left {
+	width: 12%;
+	position: fixed;
+	top: 0;
+	height: 10%;
+	right:0;
+}
+
+.script-container-right {
+	left:0;
+}
+
 
 @media (max-width: 767px) and (min-width: 380px){
     .client-section-container {
@@ -2745,20 +2762,159 @@ input[type="submit"]:hover {
 
 
 
+.row {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 
 
 
+#categories-une {
+  padding: 1em;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+#categories-une .une a .post-title, .articles-lies .article a .post-title {
+  padding: 0 1.5em;
+    padding-top: 0px;
+    padding-right: 1.5em;
+    padding-bottom: 0px;
+    padding-left: 1.5em;
+  z-index: 3;
+  line-height: 1em;
+  font-weight: 100;
+  color: #000;
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: rgba(255,255,255,.9);
+    background-color: rgba(255, 255, 255, 0.9);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  height: 30%;
+  transition: .5s ease;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+#categories-une .une a .post-title span, .articles-lies .article a .post-title span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-5%,-50%);
+  text-align: center;
+}
+
+#categories-une .une a .post-thumbnail, .articles-lies .article a .post-thumbnail {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  height: 220px;
+  background-color: #aaa;
+}
 
 
+.shadow {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background-color: rgba(0,0,0,.05) !important;
+  border-radius: 0 !important;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  border: solid 1px rgba(0,0,0,.05) !important;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.05);
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgba(0, 0, 0, 0.05);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.05);
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: rgba(0, 0, 0, 0.05);
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+}
 
+@media (min-width: 992px) {
+  .col-lg-4 {
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 33.3333%;
+    max-width: 33.33333%;
+  }
+}
 
+.blog-container {
+  max-width: 800px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
+.blog-post {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.blog-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
 
+.blog-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7));
+  padding: 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
 
-
-
-
-
-
-
+.blog-post:hover .blog-title {
+  opacity: 1;
+}

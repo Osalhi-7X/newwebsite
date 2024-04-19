@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondevisconstruction - Trouvez la maison de vos rêves</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <ul class="header-top-list">
+
+          <li>
+            <a href="mailto:info@homeverse.com" class="header-top-link">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <span>info@mondevisconstruction.com</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="header-top-link">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>Paris, France</address>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <ul class="header-top-social-list">
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <button class="header-top-btn">réseaux</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="{{ url_for('static', filename='/images/logo.png') }}" alt="Homeverse logo">
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="{{ url_for('static', filename='/images/logo.png') }}" alt="Homeverse logo">
+            </a>
+
+            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="navbar-bottom">
+            <ul class="navbar-list">
+
+              <li>
+                <a href="https://www.profitablegatecpm.com/kyarfcv72p?key=346d33f9608dc747349c98c052b144ca" class="navbar-link" data-nav-link>Application</a>
+              </li>
+
+              <li>
+                <a href="#about" class="navbar-link" data-nav-link>À propos</a>
+              </li>
+
+              <li>
+                <a href="#service" class="navbar-link" data-nav-link>Service</a>
+              </li>
+              
+	     <!-- 
+              <li>
+                <a href="#property" class="navbar-link" data-nav-link>Property</a>
+              </li>
+  	     -->
+  	     
+              <li>
+                <a href="blog" class="navbar-link" data-nav-link>Blog</a>
+              </li>
+
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link>Nous contacter</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </nav>
+        
+
+        <div class="header-bottom-actions">
+
+          <button class="header-bottom-actions-btn" aria-label="Search">
+            <ion-icon name="search-outline"></ion-icon>
+
+            <span>Search</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" aria-label="Profile">
+            <ion-icon name="person-outline"></ion-icon>
+
+            <span>Profile</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" aria-label="Cart">
+            <ion-icon name="cart-outline"></ion-icon>
+
+            <span>Cart</span>
+          </button>
+
+          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+            <ion-icon name="menu-outline"></ion-icon>
+
+            <span>Menu</span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+
+  <div class="blog-container">
+    <a href="article2">
+    <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/52311.jpg') }}" alt="Blog 1" class="blog-image">
+      <div class="blog-title">Dans quels cas faire appel à un expert en bâtiment agréé ?</div>
+    </div>
+    </a>
+    
+    <a href="article1">
+    <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/47185.jpg') }}" alt="Blog 2" class="blog-image">
+      <div class="blog-title">Quelles sont les conditions d’obtention d’un permis de construire ?</div>
+    </div>
+    </a>
+    <a href="article5">
+    <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/construction-maison-individuelle-768x512.jpg') }}" alt="Blog 3" class="blog-image">
+      <div class="blog-title">Construction d’une maison individuelle : 5 choses à ne pas négliger </div>
+    </div>
+    </a>
+    <a href="article3">
+     <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/profile-en-acier-1024x683.jpg') }}" alt="Blog 4" class="blog-image">
+      <div class="blog-title">Comment calculer la charge supportée par un profilé en acier ?</div>
+    </div>
+    </a>
+    <a href="article4">
+        <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/plan-local-durbanisme-1024x517.jpg') }}" alt="Blog 5" class="blog-image">
+      <div class="blog-title">Construire dans votre commune : ce que vous devez savoir sur le Plan Local d’Urbanisme (PLU)</div>
+    </div>
+    </a>
+    <a href="article6">
+    <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/raccord-assainissement-768x493.jpg') }}" alt="Blog 6" class="blog-image">
+      <div class="blog-title">Comment effectuer un raccordement assainissement réussi : notre guide</div>
+    </div>
+    </a>
+    <a href="article7">
+        <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/abri-jardin-dans-cour-768x512.jpg') }}" alt="Blog 7" class="blog-image">
+      <div class="blog-title">Comment construire un abri de jardin dans sa cour ?</div>
+    </div>
+    </a>
+    <a href="article1">
+        <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/panneaux-comment.jpg') }}" alt="Blog 8" class="blog-image">
+      <div class="blog-title">Comment choisir les bons panneaux de bois pour votre projet ?</div>
+    </div>
+    </a>
+       <a href="article8">
+        <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/briques-768x387.jpg') }}" alt="Blog 9" class="blog-image">
+      <div class="blog-title">Quels sont les critères de choix des matériaux de construction ?</div>
+    </div>
+    </a>
+    <a href="article1">
+        <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/fissure_beton-768x576.jpg') }}" alt="Blog 10" class="blog-image">
+      <div class="blog-title">Fissure dans le béton : que faire ?</div>
+    </div>
+    </a>
+    <a href="article1">
+        <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/entrepot-logistique.jpg') }}" alt="Blog 11" class="blog-image">
+      <div class="blog-title">Construction d’un entrepôt logistique – Tout savoir</div>
+    </div>
+    </a>
+    <a href="article1">
+        <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/Plans-dessinateur-768x342.jpg') }}" alt="Blog 12" class="blog-image">
+      <div class="blog-title">Quel est le rôle du dessinateur en bâtiment ? Découvrez notre guide</div>
+    </div>
+    </a>
+    <a href="article1">
+    <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/fondation-pour-construction-maison.jpg') }}" alt="Blog 13" class="blog-image">
+      <div class="blog-title">Guide de la construction maison : prix, étapes et démarches</div>
+    </div>
+    </a>
+    <a href="article1">
+    <div class="blog-post">
+      <img src="{{ url_for('static', filename='/images/index.jpeg') }}" alt="Blog 14" class="blog-image">
+      <div class="blog-title">Exemples de devis construction maison détaillés : tous les prix et corps de métiers</div>
+    </div>
+    </a>
+
+    <!-- Add more blog posts as needed -->
+
+  </div>
+  </main>
+  </body>
+  <script async src="https://zmonei.com/na/waWQiOjExNzQ2ODEsInNpZCI6MTMyMTYzMCwid2lkIjo1MzM3MTksInNyYyI6Mn0=eyJ.js"></script>
+  <!-- 
+    - #FOOTER
+  -->
+
+   <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{{ url_for('static', filename='/images/logo-light.png') }}" alt="Homeverse logo">
+          </a>
+
+          <p class="section-text">
+            Évaluez le coût de construction de votre maison en un clic, rapidement et gratuitement.
+          </p>
+
+          <ul class="contact-list">
+
+            <li>
+              <a href="#" class="contact-link">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>Paris, France</address>
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+0123456789" class="contact-link">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <span>+0123-456789</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:contact@homeverse.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>contact@mondevisconstruction.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">L'entreprise</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Qui sommes-nous ?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+	    
+  	    <!-- 
+            <li>
+              <a href="#" class="footer-link">All Products</a>
+            </li>
+            
+
+            <li>
+              <a href="#" class="footer-link">Locations Map</a>
+            </li>
+            -->
+
+            <li>
+              <a href="#" class="footer-link">Nous contacter</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">A propos</p>
+            </li>
+           <!-- 
+            <li>
+              <a href="#" class="footer-link">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Wish List</a>
+            </li>
+          
+            <li>
+              <a href="#" class="footer-link">Login</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">My account</a>
+            </li>
+	   -->
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+            
+             <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+            
+            <!--
+            <li>
+              <a href="#" class="footer-link">Promotional Offers</a>
+            </li>
+            -->
+          </ul>
+	
+          <ul class="footer-list">
+	   <!--
+            <li>
+              <p class="footer-list-title">Customer Care</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Login</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">My account</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">FAQ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+	-->
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <a href="#">mondevisconstruction</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+</html>
